@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/angular-material",
+  "sourceRoot": "libs/angular-material/src",
+  "prefix": "component-monorepo",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/angular-material"],
+      "options": {
+        "jestConfig": "libs/angular-material/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/angular-material/src/**/*.ts",
+          "libs/angular-material/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

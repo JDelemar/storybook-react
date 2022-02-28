@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "angular-material": "libs/angular-material",
     "web": "apps/web",
     "web-e2e": "apps/web-e2e"
   }
