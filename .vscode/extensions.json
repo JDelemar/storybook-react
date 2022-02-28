@@ -3,6 +3,12 @@
     "nrwl.angular-console",
     "esbenp.prettier-vscode",
     "firsttris.vscode-jest-runner",
-    "dbaeumer.vscode-eslint"
+    "dbaeumer.vscode-eslint",
+    "davidanson.vscode-markdownlint",
+    "aaron-bond.better-comments",
+    "nick-rudenko.back-n-forth",
+    "eamodio.gitlens",
+    "streetsidesoftware.code-spell-checker",
+    "firsttris.vscode-jest-runner",
   ]
 }
