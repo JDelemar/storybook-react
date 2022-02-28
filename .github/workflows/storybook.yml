@@ -4,7 +4,9 @@ name: Build and Deploy Storybook
 # Event for the workflow
 on: 
   push:
-    paths: ["apps/web/app/src/app/**"] # Trigger the action only when files change in the folders defined here
+    branches:
+      - main
+    # paths: ["apps/web/app/src/app/**"] # Trigger the action only when files change in the folders defined here
 
 # List of jobs
 jobs:
