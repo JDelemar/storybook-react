@@ -1,1 +1,1 @@
-export * from './lib/angular-material.module';
+export * from './lib';
