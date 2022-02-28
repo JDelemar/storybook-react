@@ -10,7 +10,14 @@ Component Monorepo to test components. View [Component Monorepo Storybook on Git
   - Develop `npm start` - view at `http://localhost:4200`
   - Storybook `npm run storybook` - view at `http://localhost:6006`
 
-### Original README follows
+### References
+
+- References
+  - [Deploy Storybook to GitHub Pages](https://dev.to/kouts/deploy-storybook-to-github-pages-3bij)
+  - [Nx](https://nx.dev)
+    - [Storybook | Angular | Nx](https://nx.dev/storybook/overview-angular)
+
+#### Original README follows
 
 This project was generated using [Nx](https://nx.dev).  
 
