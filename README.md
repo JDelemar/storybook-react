@@ -1,6 +1,18 @@
-# ComponentMonorepo
+# Component Monorepo
 
-This project was generated using [Nx](https://nx.dev).
+Component Monorepo to test components. View [Component Monorepo Storybook on GitHub Pages here](https://jdelemar.github.io/component-monorepo)
+
+## Quick start
+
+- Quick start
+  - Clone
+  - Install packages `npm install`
+  - Develop `npm start` - view at `http://localhost:4200`
+  - Storybook `npm run storybook` - view at `http://localhost:6006`
+
+### Original README follows
+
+This project was generated using [Nx](https://nx.dev).  
 
 <p style="text-align: center;"><img src="https://raw.githubusercontent.com/nrwl/nx/master/images/nx-logo.png" width="450"></p>
 
