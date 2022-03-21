@@ -1,5 +1,8 @@
 # Component Monorepo
 
+![Build and Deploy Storybook](https://github.com/JDelemar/component-monorepo/actions/workflows/storybook.yml/badge.svg)
+![Pages build deploy](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment/badge.svg)
+
 Component Monorepo to test components. View [Component Monorepo Storybook on GitHub Pages here](https://jdelemar.github.io/component-monorepo)
 
 ## Quick start
