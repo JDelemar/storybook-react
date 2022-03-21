@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@use '@angular/material' as mat;
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// default colors
+$primary: mat.define-palette(mat.$indigo-palette);
+$accent:  mat.define-palette(mat.$yellow-palette, 400);
+
+$theme: mat.define-light-theme($primary, $accent);
+
+@include mat.all-component-themes($theme);

@@ -1,0 +1,37 @@
+<div *ngIf="userInput$ | async"></div>
+
+<mat-form-field>
+  <!-- [value]="selectedItem ? selectedItem[propertyToUseForText] : ''" -->
+  <input
+    type="text"
+    matInput
+    [placeholder]="placeHolder"
+    [formControl]="inputControl"
+  >
+  <div
+    matSuffix
+    style="display: flex; min-width: 48px; justify-content: flex-end;"
+  >
+    <div  *ngIf="isDisplayingClearIcon" style="width: 24px;">
+      <!-- matSuffix -->
+      <button
+        *ngIf="inputControl.value"
+        mat-button
+        mat-icon-button
+        aria-label="Clear"
+        (click)="clearSelection($event)"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <div *ngIf="isDisplayingSearchIcon" style="width: 24px;">
+      <!-- matSuffix -->
+      <button
+        mat-button
+        mat-icon-button
+      >
+        <mat-icon>search</mat-icon>
+      </button>
+    </div>
+  </div>
+</mat-form-field>

@@ -19,6 +19,8 @@
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
     "strict": true,
+    // Prevent: Property 'x' has no initializer and is not definitely assigned in the constructor
+    // "strictPropertyInitialization": false, // or use definite assignment assertion (!)
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
