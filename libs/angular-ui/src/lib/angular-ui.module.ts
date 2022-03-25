@@ -5,10 +5,18 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { FaMaterialModule } from '@component-monorepo/angular-material';
 
-import { SearchComponent } from './components';
+import {
+  ProgressBarModule,
+
+  SearchComponent,
+} from './components';
 
 const exportComponents = [
   SearchComponent,
+];
+
+const exportModules = [
+  ProgressBarModule,
 ];
 
 @NgModule({
@@ -18,11 +26,13 @@ const exportComponents = [
     FormsModule,
     ReactiveFormsModule,
     FaMaterialModule,
+    ...exportModules,
   ],
   declarations: [
     ...exportComponents,
   ],
   exports: [
+    ...exportModules,
     ...exportComponents,
   ],
 })

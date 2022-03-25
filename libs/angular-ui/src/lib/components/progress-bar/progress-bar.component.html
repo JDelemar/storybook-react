@@ -1,0 +1,5 @@
+<div *ngIf="progressBar$ | async as progressBar">
+  <div *ngIf="progressBar">
+      <mat-progress-bar [mode]="progressBar.Mode" [value]="progressBar.Value"></mat-progress-bar>
+  </div>
+</div>
