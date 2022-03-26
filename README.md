@@ -1,9 +1,13 @@
 # Component Monorepo
 
-![Build and Deploy Storybook](https://github.com/JDelemar/component-monorepo/actions/workflows/storybook.yml/badge.svg)
-![Pages build deploy](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment/badge.svg)
+[![Build and Deploy Storybook](https://github.com/JDelemar/component-monorepo/actions/workflows/storybook.yml/badge.svg)](https://github.com/JDelemar/component-monorepo/actions/workflows/storybook.yml)
+[![pages-build-deployment](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment)[![Build and Deploy Storybook React](https://github.com/JDelemar/storybook-react/actions/workflows/storybook-react.yml/badge.svg)](https://github.com/JDelemar/storybook-react/actions/workflows/storybook-react.yml)[![pages-build-deployment](https://github.com/JDelemar/storybook-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/storybook-react/actions/workflows/pages/pages-build-deployment)
 
-Component Monorepo to test components. View [Component Monorepo Storybook on GitHub Pages here](https://jdelemar.github.io/component-monorepo)
+Component Monorepo to test components.  
+View:
+
+- [Angular Storybook on GitHub Pages here](https://jdelemar.github.io/component-monorepo)
+- [React Storybook on GitHub Pages here](https://jdelemar.github.io/storybook-react)
 
 ## Quick start
 
@@ -13,7 +17,16 @@ Component Monorepo to test components. View [Component Monorepo Storybook on Git
   - Develop `npm start` - view at `http://localhost:4200`
   - Storybook `npm run storybook` - view at `http://localhost:6006`
 
-### References
+### Notes
+
+- Notes
+  - **Multiple origins for a project**
+    - Add multiple origins
+      - `git remote set-url --add --push origin git@github.com:JDelemar/component-monorepo.git`
+      - `git remote set-url --add --push origin git@github.com:JDelemar/storybook-react.git`
+    - Show remote repositories `git remote -v`
+
+#### References
 
 - References
   - [Deploy Storybook to GitHub Pages](https://dev.to/kouts/deploy-storybook-to-github-pages-3bij)
