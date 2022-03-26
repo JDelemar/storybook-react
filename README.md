@@ -19,6 +19,8 @@ Component Monorepo to test components. View [Component Monorepo Storybook on Git
   - [Deploy Storybook to GitHub Pages](https://dev.to/kouts/deploy-storybook-to-github-pages-3bij)
   - [Nx](https://nx.dev)
     - [Storybook | Angular | Nx](https://nx.dev/storybook/overview-angular)
+  - [GitHub marketplace](https://github.com/marketplace)
+    - [Deploy to GitHub Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
 
 #### Original README follows
 
