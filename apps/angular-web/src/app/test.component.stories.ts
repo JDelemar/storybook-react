@@ -4,7 +4,7 @@ import { moduleMetadata, Story, Meta } from '@storybook/angular';
 @Component({
   selector: 'storybook-temp',
   template: `
-    <h2>TempComponent works!</h2>
+    <h2>TempComponent works!!!</h2>
     <p>Hosted on GitHub Pages</p>
   `,
 })
