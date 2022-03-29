@@ -7,7 +7,7 @@ on:
     branches:
       - gh-pages
     paths: # Trigger the action only when files change in the folders defined here
-      - 'apps/web/src/**'
+      - 'apps/angular-web/src/**'
 
 # List of jobs
 jobs:
@@ -32,7 +32,7 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.2.5
         with:
           branch: gh-pages # The branch the action should deploy to.
-          folder: dist/storybook/web # The folder that the build-storybook script generates files.
+          folder: dist/storybook/angular-web # The folder that the build-storybook script generates files.
           # Uses the provided scoped GitHub token by default ~~GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}~~
           # On by default ~~CLEAN: true # Automatically remove deleted files from the deploy branch~~
           target-folder: docs # The folder that we serve our Storybook files from
