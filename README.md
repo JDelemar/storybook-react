@@ -34,6 +34,7 @@ View:
     - [Storybook | Angular | Nx](https://nx.dev/storybook/overview-angular)
   - [GitHub marketplace](https://github.com/marketplace)
     - [Deploy to GitHub Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
+  - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#patterns-to-match-file-paths)
 
 #### Original README follows
 

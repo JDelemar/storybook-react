@@ -3,7 +3,9 @@
   "projects": {
     "angular-material": "libs/angular-material",
     "angular-ui": "libs/angular-ui",
-    "web": "apps/web",
-    "web-e2e": "apps/web-e2e"
+    "angular-web": "apps/angular-web",
+    "angular-web-e2e": "apps/angular-web-e2e",
+    "react-web": "apps/react-web",
+    "react-web-e2e": "apps/react-web-e2e"
   }
 }
