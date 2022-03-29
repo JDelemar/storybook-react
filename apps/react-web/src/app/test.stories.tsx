@@ -5,7 +5,7 @@ import { ComponentStory, ComponentMeta } from '@storybook/react';
 const TempComponent = () => {
   return (
     <>
-      <h2>TempComponent works!!!</h2>
+      <h2>TempComponent works!!</h2>
       <p>Hosted on GitHub Pages</p>
     </>
   );
