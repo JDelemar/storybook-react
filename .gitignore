@@ -1,5 +1,8 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
+**/react-web/.storybook/preview.js
+**/assets/internal/
+
 # compiled output
 /dist
 /tmp

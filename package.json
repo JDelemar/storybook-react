@@ -10,7 +10,7 @@
     "build-storybook": "nx build-storybook angular-web",
     "start:react": "NODE_ENV=development nx serve react-web",
     "build:react": "nx build react-web",
-    "storybook:react": "nx run react-web:storybook --port 6006",
+    "storybook:react": "nx run react-web:storybook",
     "build-storybook:react": "NODE_ENV=production nx build-storybook react-web",
     "postinstall": "ngcc --properties es2015 browser module main"
   },

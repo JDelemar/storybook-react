@@ -1,3 +1,5 @@
+// const path = require('path');
+
 const rootMain = require('../../../.storybook/main');
 
 module.exports = {
@@ -18,6 +20,12 @@ module.exports = {
     }
 
     // add your own webpack tweaks if needed
+    
+    // config.module.rules.push({
+    //   test: /\.scss$/,
+    //   use: ['style-loader', 'css-loader', 'sass-loader'],
+    //   include: path.resolve(__dirname, '../'),
+    // });
 
     return config;
   },
