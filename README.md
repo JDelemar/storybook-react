@@ -25,6 +25,21 @@ View:
       - `git remote set-url --add --push origin git@github.com:JDelemar/component-monorepo.git`
       - `git remote set-url --add --push origin git@github.com:JDelemar/storybook-react.git`
     - Show remote repositories `git remote -v`
+  - **React**
+    - Obsidian components
+      - `preview.js` - errors if css is not included in source, that's why it's ignored for now (may not come back to this)
+
+        ```js
+          (async () => {
+            document.body.classList.add('theme-dark');
+            try {
+              await import('../src/assets/internal/obsidian.css');
+              // await require('../src/assets/internal/obsidian.css');
+            } catch(e) {
+              console.log('Not found, you must supply your own css.', e);
+            }
+          })();
+        ```
 
 #### References
 
@@ -35,6 +50,7 @@ View:
   - [GitHub marketplace](https://github.com/marketplace)
     - [Deploy to GitHub Pages](https://github.com/marketplace/actions/deploy-to-github-pages)
   - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#patterns-to-match-file-paths)
+  - [Obsidian React Components](https://github.com/elias-sundqvist/obsidian-react-components)
 
 #### Original README follows
 
