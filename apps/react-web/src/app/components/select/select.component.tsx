@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
 
+import './select.component.css';
+
 interface Props {
   fieldName: string;
   options: string;
