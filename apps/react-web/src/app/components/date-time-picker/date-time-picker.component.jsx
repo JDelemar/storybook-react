@@ -1,9 +1,10 @@
 //@ts-check
 import React, { useEffect, useState } from 'react';
 
+import './date-time-picker.component.css';
+
 /**
- * @typedef Props
- * @type {object}
+ * @typedef {Object} Props
  * @property {string} fieldName
  */
 
@@ -116,7 +117,7 @@ export const DateTimePickerComponent = (props) => {
   }
 
   /**
-   * 
+   * Update DateTime
    * @param {string} newDateTimeString 
    */
   const updateDateTime = (newDateTimeString) => {
@@ -151,6 +152,7 @@ export const DateTimePickerComponent = (props) => {
   };
 
   /**
+   * Handle selected option change
    * @param {any} e 
    */
   const handleDateChange = (e) => {

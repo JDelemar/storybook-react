@@ -1,28 +1,56 @@
+//@ts-check
 import React, { useEffect, useState } from 'react';
 
-interface Props {
-  fieldName: string;
-  options: string;
-}
+import './select.component.css';
 
-export const SelectComponent = (props: Props) => {
+/**
+ * @typedef {Object} Props
+ * @property {string} fieldName
+ * @property {string} options
+ */
+
+/**
+ * Select Component
+ * @param {Props} props 
+ * @returns 
+ */
+export const SelectComponent = (props) => {
+  /** @type {string} */
   const DEFAULT_VALUE = 'default';
+  /** @type {string} */
   const DEFAULT_LABEL = 'Select...';
 
+  /** @type {[boolean, Function]} Init */
   const [init, setInit] = useState(false);
-  const [options] = useState(props.options
+
+  /**
+   * @typedef {Object} Option
+   * @property {string} value
+   * @property {string} label
+   */
+
+  /** @type {[Option[], Function]} */
+  const [options] =
+  useState(props.options
     .split(',')
-    .reduce<{ value: string, label: string }[]>( (previous, current, index) => {
-      if (index === 0)
-        previous.push({ value: DEFAULT_VALUE, label: DEFAULT_LABEL});
-  
-      previous.push({
-        value: current.toLocaleLowerCase(),
-        label: current,
-      });
-      return previous;
-    }, [])
-  );
+    .reduce(
+      /**
+       * @param {Option[]} previous 
+       * @param {string} current 
+       * @param {number} index 
+       */
+      (previous, current, index) => {
+        if (index === 0)
+          previous.push({ value: DEFAULT_VALUE, label: DEFAULT_LABEL});
+    
+        previous.push({
+          value: current.toLocaleLowerCase(),
+          label: current,
+        });
+        return previous;
+      }, [])
+    );
+  /** @type {[string, Function]} SelectedOption */
   const [selectedOption, setSelectedOption] = useState(DEFAULT_VALUE);
 
   /**
@@ -115,9 +143,13 @@ export const SelectComponent = (props: Props) => {
   
   }, [selectedOption])
   
-  /** Handle selected option change */
-  const handleChange = (e?: any) => {
-    const value: string = e?.target?.value || DEFAULT_VALUE;
+  /** 
+   * Handle selected option change
+   * @param {any} [e]
+   */
+  const handleChange = (e) => {
+    /** @type {string} */
+    const value = e?.target?.value || DEFAULT_VALUE;
     // console.log('handleChange', value);
     setSelectedOption(value);
   };
