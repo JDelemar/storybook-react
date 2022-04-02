@@ -20,7 +20,6 @@ export const SelectComponent = (props) => {
   /** @type {string} */
   const DEFAULT_LABEL = 'Select...';
 
-  /** @type {[boolean, Function]} Init */
   const [init, setInit] = useState(false);
 
   /**
@@ -50,7 +49,6 @@ export const SelectComponent = (props) => {
         return previous;
       }, [])
     );
-  /** @type {[string, Function]} SelectedOption */
   const [selectedOption, setSelectedOption] = useState(DEFAULT_VALUE);
 
   /**

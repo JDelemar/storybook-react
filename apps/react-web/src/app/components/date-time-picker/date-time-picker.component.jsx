@@ -14,12 +14,10 @@ import './date-time-picker.component.css';
  * @returns 
  */
 export const DateTimePickerComponent = (props) => {
-  /** @type {[string, Function]} DateTime */
   const [dateTime, setDateTime] = useState('');
 
   /** @type {[boolean, Function]} IsWithTime */
   const [isWithTime, setIsWithTime] = useState(false);
-  /** @type {[boolean, Function]} Init */
   const [init, setInit] = useState(false);
 
   const isDark = document.querySelector('body.theme-dark') !== null;
