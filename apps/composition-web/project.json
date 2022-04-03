@@ -1,33 +1,33 @@
 {
-  "root": "apps/react-web",
-  "sourceRoot": "apps/react-web/src",
   "projectType": "application",
+  "root": "apps/composition-web",
+  "sourceRoot": "apps/composition-web/src",
+  "tags": [],
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
       "outputs": ["{options.outputPath}"],
       "options": {
+        "outputPath": "dist/apps/composition-web",
         "compiler": "babel",
-        "outputPath": "dist/apps/react-web",
-        "index": "apps/react-web/src/index.html",
+        "index": "apps/composition-web/src/index.html",
         "baseHref": "/",
-        "main": "apps/react-web/src/main.tsx",
-        "polyfills": "apps/react-web/src/polyfills.ts",
-        "tsConfig": "apps/react-web/tsconfig.app.json",
+        "main": "apps/composition-web/src/main.ts",
+        "polyfills": "apps/composition-web/src/polyfills.ts",
+        "tsConfig": "apps/composition-web/tsconfig.app.json",
         "assets": [
-          "apps/react-web/src/favicon.ico",
-          "apps/react-web/src/assets"
+          "apps/composition-web/src/favicon.ico",
+          "apps/composition-web/src/assets"
         ],
-        "styles": ["apps/react-web/src/styles.scss"],
-        "scripts": [],
-        "webpackConfig": "@nrwl/react/plugins/webpack"
+        "styles": ["apps/composition-web/src/styles.scss"],
+        "scripts": []
       },
       "configurations": {
         "production": {
           "fileReplacements": [
             {
-              "replace": "apps/react-web/src/environments/environment.ts",
-              "with": "apps/react-web/src/environments/environment.prod.ts"
+              "replace": "apps/composition-web/src/environments/environment.ts",
+              "with": "apps/composition-web/src/environments/environment.prod.ts"
             }
           ],
           "optimization": true,
@@ -42,13 +42,11 @@
     "serve": {
       "executor": "@nrwl/web:dev-server",
       "options": {
-        "buildTarget": "react-web:build",
-        "hmr": true
+        "buildTarget": "composition-web:build"
       },
       "configurations": {
         "production": {
-          "buildTarget": "react-web:build:production",
-          "hmr": false
+          "buildTarget": "composition-web:build:production"
         }
       }
     },
@@ -56,25 +54,26 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["apps/react-web/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["apps/composition-web/**/*.ts"]
       }
     },
     "test": {
       "executor": "@nrwl/jest:jest",
-      "outputs": ["coverage/apps/react-web"],
+      "outputs": ["coverage/apps/composition-web"],
       "options": {
-        "jestConfig": "apps/react-web/jest.config.js",
+        "jestConfig": "apps/composition-web/jest.config.js",
         "passWithNoTests": true
       }
     },
     "storybook": {
       "executor": "@nrwl/storybook:storybook",
       "options": {
-        "uiFramework": "@storybook/react",
-        "port": 6008,
+        "uiFramework": "@storybook/html",
+        "port": 6006,
         "config": {
-          "configFolder": "apps/react-web/.storybook"
-        }
+          "configFolder": "apps/composition-web/.storybook"
+        },
+        "projectBuildConfig": "composition-web"
       },
       "configurations": {
         "ci": {
@@ -86,11 +85,12 @@
       "executor": "@nrwl/storybook:build",
       "outputs": ["{options.outputPath}"],
       "options": {
-        "uiFramework": "@storybook/react",
-        "outputPath": "dist/storybook/react-web",
+        "uiFramework": "@storybook/html",
+        "outputPath": "dist/storybook/composition-web",
         "config": {
-          "configFolder": "apps/react-web/.storybook"
-        }
+          "configFolder": "apps/composition-web/.storybook"
+        },
+        "projectBuildConfig": "composition-web"
       },
       "configurations": {
         "ci": {
@@ -98,6 +98,5 @@
         }
       }
     }
-  },
-  "tags": []
+  }
 }

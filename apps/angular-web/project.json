@@ -95,7 +95,7 @@
       "executor": "@nrwl/storybook:storybook",
       "options": {
         "uiFramework": "@storybook/angular",
-        "port": 6006,
+        "port": 6007,
         "config": {
           "configFolder": "apps/angular-web/.storybook"
         },
