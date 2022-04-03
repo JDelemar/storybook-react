@@ -5,6 +5,8 @@
     "angular-ui": "libs/angular-ui",
     "angular-web": "apps/angular-web",
     "angular-web-e2e": "apps/angular-web-e2e",
+    "composition-web": "apps/composition-web",
+    "composition-web-e2e": "apps/composition-web-e2e",
     "react-web": "apps/react-web",
     "react-web-e2e": "apps/react-web-e2e"
   }

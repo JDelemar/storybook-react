@@ -8,6 +8,7 @@
     "test": "nx test",
     "storybook": "nx run angular-web:storybook",
     "build-storybook": "nx build-storybook angular-web",
+    "start:composition": "nx serve composition-web",
     "start:react": "NODE_ENV=development nx serve react-web",
     "build:react": "nx build react-web",
     "storybook:react": "nx run react-web:storybook",
