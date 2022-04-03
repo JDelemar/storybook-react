@@ -71,7 +71,7 @@
       "executor": "@nrwl/storybook:storybook",
       "options": {
         "uiFramework": "@storybook/react",
-        "port": 6006,
+        "port": 6008,
         "config": {
           "configFolder": "apps/react-web/.storybook"
         }
