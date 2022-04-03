@@ -1,12 +1,13 @@
 # Component Monorepo
 
 [![Build and Deploy Storybook](https://github.com/JDelemar/component-monorepo/actions/workflows/storybook.yml/badge.svg)](https://github.com/JDelemar/component-monorepo/actions/workflows/storybook.yml)
-[![pages-build-deployment](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment)[![Build and Deploy Storybook React](https://github.com/JDelemar/storybook-react/actions/workflows/storybook-react.yml/badge.svg)](https://github.com/JDelemar/storybook-react/actions/workflows/storybook-react.yml)[![pages-build-deployment](https://github.com/JDelemar/storybook-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/storybook-react/actions/workflows/pages/pages-build-deployment)
+[![Storybook pages](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/component-monorepo/actions/workflows/pages/pages-build-deployment)[![Build and Deploy Storybook Angular](https://github.com/JDelemar/storybook-angular/actions/workflows/storybook.yml/badge.svg)](https://github.com/JDelemar/storybook-angular/actions/workflows/storybook.yml)[![Angular pages](https://github.com/JDelemar/storybook-angular/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/storybook-angular/actions/workflows/pages/pages-build-deployment)[![Build and Deploy Storybook React](https://github.com/JDelemar/storybook-react/actions/workflows/storybook-react.yml/badge.svg)](https://github.com/JDelemar/storybook-react/actions/workflows/storybook-react.yml)[![Storybook React pages](https://github.com/JDelemar/storybook-react/actions/workflows/pages/pages-build-deployment/badge.svg)](https://github.com/JDelemar/storybook-react/actions/workflows/pages/pages-build-deployment)
 
 Component Monorepo to test components.  
 View:
 
-- [Angular Storybook on GitHub Pages here](https://jdelemar.github.io/component-monorepo)
+- [Storybook on GitHub Pages here](https://jdelemar.github.io/component-monorepo)
+- [Angular Storybook on GitHub Pages here](https://jdelemar.github.io/storybook-angular)
 - [React Storybook on GitHub Pages here](https://jdelemar.github.io/storybook-react)
 
 ## Quick start
@@ -23,23 +24,9 @@ View:
   - **Multiple origins for a project**
     - Add multiple origins
       - `git remote set-url --add --push origin git@github.com:JDelemar/component-monorepo.git`
+      - `git remote set-url --add --push origin git@github.com:JDelemar/storybook-angular.git`
       - `git remote set-url --add --push origin git@github.com:JDelemar/storybook-react.git`
     - Show remote repositories `git remote -v`
-  - **React**
-    - Obsidian components
-      - `preview.js` - errors if css is not included in source, that's why it's ignored for now (may not come back to this)
-
-        ```js
-          (async () => {
-            document.body.classList.add('theme-dark');
-            try {
-              await import('../src/assets/internal/obsidian.css');
-              // await require('../src/assets/internal/obsidian.css');
-            } catch(e) {
-              console.log('Not found, you must supply your own css.', e);
-            }
-          })();
-        ```
 
 #### References
 

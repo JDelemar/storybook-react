@@ -1,5 +1,5 @@
 # Workflow name
-name: Build and Deploy Storybook
+name: Build and Deploy Storybook Angular
 
 # Event for the workflow
 on: 
