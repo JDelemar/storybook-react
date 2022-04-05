@@ -27,6 +27,8 @@ View:
       - `git remote set-url --add --push origin git@github.com:JDelemar/storybook-angular.git`
       - `git remote set-url --add --push origin git@github.com:JDelemar/storybook-react.git`
     - Show remote repositories `git remote -v`
+  - **Storybook composition**
+    - Error: `Error with Permissions-Policy header: Unrecognized feature: 'interest-cohort'.`
 
 #### References
 
